@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'practise';
+  // title = 'practise';
+  constructor(private titleService: Title,
+    private route: ActivatedRoute,
+  ){}
+  ngOnInit(){
+  
+  }
+  
 }
