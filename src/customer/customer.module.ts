@@ -4,7 +4,7 @@ import { CustomerDashboardComponent } from './customer-dashboard/customer-dashbo
 import { CustomerProfileComponent } from './customer-profile/customer-profile.component';
 import { CustomerRoutingModule } from './customer-routing.module';
 import { RouterModule } from '@angular/router';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -15,6 +15,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     CustomerRoutingModule,
+    HttpClientModule,
   ],
   exports: [
     RouterModule,

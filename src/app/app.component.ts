@@ -9,7 +9,7 @@ import { filter } from 'rxjs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  // title = 'practise';
+
   constructor(private titleService: Title,
     private route: ActivatedRoute,
   ){}
